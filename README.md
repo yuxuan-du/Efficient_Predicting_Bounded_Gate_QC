@@ -2,6 +2,9 @@
 This repository provides the source code for our work “Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits” [![arXiv](https://img.shields.io/badge/arXiv-2408.12199-blue)](https://arxiv.org/pdf/2408.12199). Our approach leverages **classical shadows** and **compact representations of input configurations** to balance **prediction accuracy and computational efficiency**. We validate the effectiveness of this framework across diverse quantum applications, including **quantum information processing, Hamiltonian simulation, and variational quantum algorithms (VQAs)** with up to **60 qubits**.
 
 
+![Image Description](assets/scheme.png)
+
+
 ## **Overview**
 Predicting the behavior of large-scale quantum circuits is essential for advancing quantum computing and understanding quantum systems. However, the extent to which **classical learners** can infer linear properties of quantum circuits from measurement data remains an open question. This repository implements:
 - **A kernel-based learning framework** designed for efficient inference of bounded-gate quantum circuits.
@@ -10,7 +13,9 @@ Predicting the behavior of large-scale quantum circuits is essential for advanci
 
 
 ## **Usage**
-### **1. Training the Learning Model**
+### **1. Training the Learning Model** (Fig 2)
+
+The source code is avaiable at the folder 
 ```python
 from model import QuantumLearningModel
 
