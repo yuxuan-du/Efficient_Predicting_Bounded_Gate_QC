@@ -8,8 +8,9 @@ This repository provides the source code for our work “Efficient Learning for 
 ## **Overview**
 Predicting the behavior of large-scale quantum circuits is essential for advancing quantum computing and understanding quantum systems. However, the extent to which **classical learners** can infer linear properties of quantum circuits from measurement data remains an open question. This repository implements:
 - **A kernel-based learning framework** designed for efficient inference of bounded-gate quantum circuits.
-- **Theoretical guarantees on sample complexity**, demonstrating linear scaling with tunable gate count while computational costs may grow exponentially.
 - **Optimized pretraining strategies** for **variational quantum eigensolvers (VQEs)**, enabling resource-efficient quantum system certification.
+
+Refer to (https://yuxuan-du.github.io/sites/project.html) for more details about our theoretical results!
 
 ## **Requirements**
 
@@ -19,6 +20,8 @@ scikit-learn>=1.0.0
 optax>=0.1.3
 jax>=0.3.0
 joblib>=1.1.0
+h5py==3.9.0
+pennylane==0.32.0
 
 
 ## **Usage**
