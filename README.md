@@ -26,7 +26,22 @@ joblib>=1.1.0
 
 ![Image Description](assests/60-qubit-res.png)
 
-The source code is avaiable at the folder "sxxx"
+The source code is avaiable at the folder "Pretrain-50-qubit-TFIM"
+
+Please first download the dataset at https://drive.google.com/drive/folders/1lzDyZ7d3Wsm2ncFMGhkUjJg7HrI3ouXy?usp=drive_link
+
+Then run the pretraining script for two-point correlation estimation for different qubit pairs:
+
+```python 
+python GHZ_two_point_correlation_predict.py
+```
+
+
+### **2. Pretraining VQE for 50-qubit TFIM** (Fig. 3b)
+
+![Image Description](assests/50-qubit-TFIM.png)
+
+The source code is provided in the folder 'Pretrain-60-qubit-TFIM'
 
 Run the pretraining script for TFIM Hamiltonians:
 
@@ -34,18 +49,6 @@ Run the pretraining script for TFIM Hamiltonians:
 python pre_train_50-qubit_tfim_benchmark.py
 ```
 
-### **2. Pretraining VQE for 50-qubit TFIM** (Fig. 3b)
-The source code is provided in the folder 'Pretrain-60-qubit-TFIM'
-
-
-
-### **3. Pretraining VQEs**
-```python
-from vqe_pretrain import VQEPipeline
-
-vqe = VQEPipeline()
-vqe.pretrain()
-```
 
 ## **Benchmarks**
 We compare our method against **LOWESA** and **other classical simulators**, demonstrating advantages in **runtime efficiency** and **robustness to quantum noise**. Detailed benchmarking results are available in the **Benchmarking** section of our paper.
