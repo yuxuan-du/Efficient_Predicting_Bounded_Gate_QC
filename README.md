@@ -11,9 +11,20 @@ Predicting the behavior of large-scale quantum circuits is essential for advanci
 - **Theoretical guarantees on sample complexity**, demonstrating linear scaling with tunable gate count while computational costs may grow exponentially.
 - **Optimized pretraining strategies** for **variational quantum eigensolvers (VQEs)**, enabling resource-efficient quantum system certification.
 
+## **Requirements**
+
+numpy>=1.21.0
+scipy>=1.7.0
+scikit-learn>=1.0.0
+optax>=0.1.3
+jax>=0.3.0
+joblib>=1.1.0
+
 
 ## **Usage**
-### **1. Training the Learning Model** (Fig 2)
+### **1. Predicting two-point correlation of 50-qubit circuit** (Fig 2)
+
+![Image Description](assests/60-qubit-res.png)
 
 The source code is avaiable at the folder 
 ```python
@@ -28,11 +39,10 @@ model = QuantumLearningModel(num_qubits=num_qubits)
 model.train(num_samples)
 ```
 
-### **2. Evaluating the Model**
-```python
-accuracy = model.evaluate()
-print(f"Model accuracy: {accuracy:.4f}")
-```
+### **2. Pretraining VQE for 50-qubit TFIM** (Fig. 3b)
+The source code is provided in the folder 'Pretrain-60-qubit-TFIM'
+
+
 
 ### **3. Pretraining VQEs**
 ```python
