@@ -26,17 +26,12 @@ joblib>=1.1.0
 
 ![Image Description](assests/60-qubit-res.png)
 
-The source code is avaiable at the folder 
-```python
-from model import QuantumLearningModel
+The source code is avaiable at the folder "sxxx"
 
-# Define parameters
-num_qubits = 10
-num_samples = 500
-model = QuantumLearningModel(num_qubits=num_qubits)
+Run the pretraining script for TFIM Hamiltonians:
 
-# Train the model
-model.train(num_samples)
+```python 
+python pre_train_50-qubit_tfim_benchmark.py
 ```
 
 ### **2. Pretraining VQE for 50-qubit TFIM** (Fig. 3b)
