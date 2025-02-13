@@ -2,7 +2,7 @@
 This repository provides the source code for our work “Efficient Learning for Linear Properties of Bounded-Gate Quantum Circuits” [![arXiv](https://img.shields.io/badge/arXiv-2408.12199-blue)](https://arxiv.org/pdf/2408.12199). Our approach leverages **classical shadows** and **compact representations of input configurations** to balance **prediction accuracy and computational efficiency**. We validate the effectiveness of this framework across diverse quantum applications, including **quantum information processing, Hamiltonian simulation, and variational quantum algorithms (VQAs)** with up to **60 qubits**.
 
 
-![Image Description](assets/scheme.png)
+![Image Description](assests/scheme.png)
 
 
 ## **Overview**
