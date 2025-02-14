@@ -17,11 +17,11 @@ Refer to (https://yuxuan-du.github.io/sites/project.html) for more details about
 numpy>=1.21.0
 scipy>=1.7.0
 scikit-learn>=1.0.0
-optax>=0.1.3
+optax>=0.2.4
 jax>=0.3.0
 joblib>=1.1.0
-h5py==3.9.0
-pennylane==0.32.0
+h5py>=3.9.0
+pennylane>=0.32.0
 
 
 ## **Usage**
